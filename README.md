@@ -15,9 +15,11 @@ Following steps were followed for the analysis of theater outcomes based on laun
 1. A **Years** column was created based on the **Date Created Conversion** column in the Kickstarter spreadsheet.
 
 ![Year formula](Images_Theater/Year_formula_s.png) 
+
 Above formula was used to compute the **Years** column from the **Date Created Conversion** column in the Kickstarter spreadsheet.
 
 ![Yearformula_date_created_conversion_s](Images_Theater/Yearformula_date_created_conversion_s.png)
+
 In the above image, it can be seen that the **Date Created Conversion** column is of the form "mm/dd/yyyy". The years formula was used to extract the "yyyy" portion from the column.
 We will later use this **years** column as a filter in our pivot table analysis.
 
@@ -37,7 +39,7 @@ We will later use this **years** column as a filter in our pivot table analysis.
 
 ![Filter_theater_s](Images_Theater/Filter_theater_s.png)
 
-4. Now the campaign outcomes were sorted in descending order.
+4. Now the campaign outcomes were sorted in descending order using the sort option from data menu.
 
 ![Sorting_decendingorder_s](Images_Theater/Sorting_decendingorder_s.png)
 
