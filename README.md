@@ -14,7 +14,8 @@ Following steps were followed for the analysis of theater outcomes based on laun
 
 1. A **Years** column was created based on the **Date Created Conversion** column in the Kickstarter spreadsheet
 
-![Year formula]("Images_Theater\Year_formula_s.png")
+![Year formula]("C:\Users\shrut\kickstarter-analysis\Images_Theater\Year_formula_s.png") 
+
 
 
 
