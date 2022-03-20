@@ -25,7 +25,7 @@ We will later use this **years** column as a filter in our pivot table analysis.
 
 **2.** Now the pivot table was created using the Kickstarter spreadsheet using the following parameters: 
 
-    ![Pivot_Chart_Fields_S](Images_Theater/Pivot_Chart_Fields_S.png)
+![Pivot_Chart_Fields_S](Images_Theater/Pivot_Chart_Fields_S.png)
 
     - Filters: "Parent category" and "Years"
 
