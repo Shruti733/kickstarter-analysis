@@ -29,15 +29,15 @@ We will later use this **years** column as a filter in our pivot table analysis.
 
 - Filters: "Parent category" and "Years"
 - Columns: "outcomes"\
-Since we wanted to analyse the different kind of outcomes, we used "outcomes" as "Columns"
+Since we wanted to analyze the different kind of outcomes, we used "outcomes" as "Columns"
 - Rows: "Date created conversion"\
-Since data needs to be analysed for different dates, soI selected "Date created conversion" in Rows area.
+Since data needs to be analyzed for different dates, so we selected "Date created conversion" in Rows area.
 After dragging the "Date created conversion" field in the Row area, two other fields get auto-populated namely
 "Years2" and "Quarters" along with "Date created conversion" field. Excel automatically populates these fields,
-from which we can can select the suitable field as per our requirements. In the current case, we chose
+from which we can select the suitable field as per our requirements. In the current case, we chose
 "Date created conversion" field so as to group the outcomes month-wise and removed the unwanted fields.
 - Values: "Count of outcomes"\
-Since we wanted to analyse the total number of "successful", "failed" and "canceled" outcomes, that's
+Since we wanted to analyze the total number of "successful", "failed" and "canceled" outcomes, that's
 why we have used the count measure.
 
 **3.** Now we filtered "theater" from the parent category list since campaigns under the "theater" parent category
@@ -111,11 +111,44 @@ Above image explains how the above created range was referenced in the function 
 ## Results
 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
-    By looking at the chart ,I can see that those campaigns were launched in the month of May, have a greater success rate in comparison with other months. So it can be good month to start a new campaign in the same category
+    1. It is evident from the line chart that the number of successful outcomes peak in the month of May and
+    gradually recede through the end of the year. This tells us that the month of May seems to be good month
+    to launch a similar campaign and it has higher chances to succeed. Also, if we clear the parent category
+    filter, we can see that the number of successful outcomes for overall campaigns also follow the same trend
+    with a peak in the month of May.
+    
+    2. However, we observed that the given data does not exhibit similar trends over the years, so we have to
+    take the current trends with a pinch of salt. We observed that the total number of campaigns under theater
+    parent-category between 2009-2013 were only **26** and all were **successful** campaigns which is just **1.8%**
+    of the overall campaign data under the theater parent-category. So essentially, the trends only reflect the
+    trends for year 2014-2017.
 
 - What can you conclude about the Outcomes based on Goals?
-    Campaigns with the Goals of less than 5000 have a greater success rate which has reduced with the increase in Goal amount.
+    It is evident from the line chart that as the funding goal amount increased for a campaign, the success rate for
+    the campaigns has gradually dipped whereas the failure rate has gradually increased. This provides us an indication
+    that a certain lower funding goal amount range seems to be contributing to success of a campaign. From the given data,
+    it is evident that campaigns with funding goal-amounts less than **5000** are bound to be more successful.
+    We also observed that there have been no cancellations of campaigns
+    under "Plays" sub-category.
+    However, we have been comparing the funding-goal amount values against each other without considering
+    their currencies in a single line chart. I think this creates improper projection of the data. Moreover, if
+    we just compare the goal amount values without considering their currencies, the trends can be biased.
+    Ideally, we should be comparing apples with apples and this seems to be a comparison between apples and oranges! 
 
 - What are some limitations of this dataset?
+    With reference to "Theater outcomes by launch date", we observed that there is lack of data to analyze the trends between 2009
+    to 2017 for "theater" parent-category. Bulk of the data is ranging between the year 2014 to 2017, so either we do not have sufficient data for years 2009 to 2013 or we need more data to explain the lack of it.
+
+    ![2009_2013_limitation](Images_Theater/2009_2013_limitation.png)
+
+    Above line chart shows the trends of counts of "successful","failed" and "canceled" campaigns between 2009 to 2013. As we can see there is no data for "failed" and "canceled". Furthermore, the data available for "successful" outcomes is also very less in comparison with other years.
 
 - What are some other possible tables and/or graphs that we could create?
+    1. We can analyze the counts of "successful", "failed" and "canceled" campaigns with respect to various range of duration.
+    This can be achieved by creating another column of duration using the launch and end date data.
+
+    2. We can also do a country-wise analysis to compare the counts of "successful","failed" and "canceled" campaigns. We can probably try to answer questions like "which sub-category/category is famous in which country ?".
+
+
+
+ 
