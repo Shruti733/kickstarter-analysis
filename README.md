@@ -28,15 +28,15 @@ We will later use this **years** column as a filter in our pivot table analysis.
 ![Pivot_Chart_Fields_S](Images_Theater/Pivot_Chart_Fields_S.png)
 
 - Filters: "Parent category" and "Years"
-- Columns: "outcomes"
+- Columns: "outcomes" ---
 Since we wanted to analyse the different kind of outcomes, we used "outcomes" as "Columns"
-- Rows: "Date created conversion"
+- Rows: "Date created conversion" ---
 Since data needs to be analysed for different dates, so we selected "Date created conversion" in Rows area.
 After dragging the "Date created conversion" field in the Row area, two other fields get auto-populated namely
 "Years2" and "Quarters" along with "Date created conversion" field. Excel automatically populates these fields,
 from which we can can select the suitable field as per our requirements. In the current case, we chose
 "Date created conversion" field so as to group the outcomes month-wise and removed the unwanted fields.
-- Values: "Count of outcomes"
+- Values: "Count of outcomes" ---
 Since we wanted to analyse the total number of "successful", "failed" and "canceled" outcomes, that's
 why we have used the count measure.
 
@@ -53,7 +53,7 @@ why we have used the count measure.
 ![Images_Theater/Graph_s](Images_Theater/Graph_s.png)
 
 ### Analysis of Outcomes Based on Goals
-The main purpose of the analysis was to visualize the percentage of successful, failed, and canceled plays based on the funding goal amounts. This analysis can prove useful if we want to determine an optimum range of funding goal amount that should be targeted in a similar campaign.
+The main purpose of the analysis was to visualize the percentage of successful, failed, and canceled plays based on the funding goal amounts. This analysis can prove useful if we want to determine an optimum range of funding goal amount that should be targeted in a similar campaign. ---
 Following steps were followed for the analysis of outcomes based on goals:
 
 1. Firstly, the funding goal-amount ranges were created to group the projects based on their targeted goal amounts.
