@@ -145,6 +145,7 @@ Above image explains how the above created range was referenced in the function 
     it is evident that campaigns with funding goal-amounts less than **5000** are bound to be more successful.
     We also observed that there have been no cancellations of campaigns
     under "Plays" sub-category.
+    
     However, we have been comparing the funding-goal amount values against each other without considering
     their currencies in a single line chart. I think this creates improper projection of the data. Moreover, if
     we just compare the goal amount values without considering their currencies, the trends can be biased.
