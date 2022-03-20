@@ -31,7 +31,7 @@ We will later use this **years** column as a filter in our pivot table analysis.
 - Columns: "outcomes"\
 Since we wanted to analyse the different kind of outcomes, we used "outcomes" as "Columns"
 - Rows: "Date created conversion"\
-Since data needs to be analysed for different dates, so we selected "Date created conversion" in Rows area.
+Since data needs to be analysed for different dates, soI selected "Date created conversion" in Rows area.
 After dragging the "Date created conversion" field in the Row area, two other fields get auto-populated namely
 "Years2" and "Quarters" along with "Date created conversion" field. Excel automatically populates these fields,
 from which we can can select the suitable field as per our requirements. In the current case, we chose
@@ -55,7 +55,9 @@ failed, or canceled projects by month.
 ![Images_Theater/Graph_s](Images_Theater/Graph_s.png)
 
 ### Analysis of Outcomes Based on Goals
-The main purpose of the analysis was to visualize the percentage of successful, failed, and canceled plays based on the funding goal amounts. This analysis can prove useful if we want to determine an optimum range of funding goal amount that should be targeted in a similar campaign.\
+The main purpose of the analysis was to visualize the percentage of "successful", "failed", and "canceled" plays based on
+the funding goal amounts. This analysis can prove useful if we want to determine an optimum range of funding goal amount
+that should be targeted in a similar campaign.\
 Following steps were followed for the analysis of outcomes based on goals:
 
 1. Firstly, the funding goal-amount ranges were created to group the projects based on their targeted goal amounts.
@@ -87,14 +89,32 @@ Following steps were followed for the analysis of outcomes based on goals:
 ![Graph_Goal_s](Images_Goals/Graph_Goal_s.png)
 
 
-
 ### Challenges and Difficulties Encountered
+
+I found it difficult to apply the COUNTIFS() function to populate the number of "successful","failed" and "canceled"
+outcomes in the "Outcomes based on Goals" spreadsheet. The COUNTIFS() function was required to be applied for each cell
+according to the range of funding goal amount specified in column A of "Outcomes based on Goals" spreadsheet.
+Technically, I could have edited and applied the function on each cell as per the applicable range, but it was too
+repetitive and tedious to say the least. To avoid this repetition, I specified the range criteria in adjacent cells
+for all rows, that could be referenced in the COUNTIFS() function.
+
+![Goal_range_s](Images_Goals/Goal_range_s.png)
+
+Above image describes the mechanism I used to specify range in adjacent cells so that I could reference the same in
+my COUNTIFS() function. This allowed me to just copy and paste the function (CTRL + D) in all rows corresponding to
+each outcome.
+
+![Countifs_challenge](Images_Goals/Countifs_challenge.png)
+
+Above image explains how the above created range was referenced in the function to avoid repeated modification.
 
 ## Results
 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
+    By looking at the chart ,I can see that those campaigns were launched in the month of May, have a greater success rate in comparison with other months. So it can be good month to start a new campaign in the same category
 
 - What can you conclude about the Outcomes based on Goals?
+    Campaigns with the Goals of less than 5000 have a greater success rate which has reduced with the increase in Goal amount.
 
 - What are some limitations of this dataset?
 
