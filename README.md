@@ -60,11 +60,11 @@ the funding goal amounts. This analysis can prove useful if we want to determine
 that should be targeted in a similar campaign.\
 Following steps were followed for the analysis of outcomes based on goals:
 
-1. Firstly, the funding goal-amount ranges were created to group the projects based on their targeted goal amounts.
+**1.** Firstly, the funding goal-amount ranges were created to group the projects based on their targeted goal amounts.
 
 ![Goal_range_s](Images_Goals/Goal_range_s.png)
 
-2. Now COUNTIFS() functions were used to populate "Number Successful", "Number Failed", and "Number Canceled" columns for "Plays" subcategory. The COUNTIFS function was applied in the following manner:
+**2.** Now COUNTIFS() functions were used to populate "Number Successful", "Number Failed", and "Number Canceled" columns for "Plays" subcategory. The COUNTIFS function was applied in the following manner:
     - **criteria_range_1:** outcome column (F) range of Kickstarter spreadsheet was selected as criteria range_1 and,
     - **criteria_1:** the outcome was compared against "successful" to get the number of successful campaigns.
 
@@ -76,15 +76,15 @@ Following steps were followed for the analysis of outcomes based on goals:
 
 ![Countif_formula_count_number_s](Images_Goals/Countif_formula_count_number_s.png)    
 
-3. Now Sum() functions were used to populate the total number of projects under "Plays" subcategory that were one of "successful", "failed" or "canceled".
+**3.** Now Sum() functions were used to populate the total number of projects under "Plays" subcategory that were one of "successful", "failed" or "canceled".
 
 ![Total_Goal_s](Images_Goals/Total_Goal_s.png)
 
-4. Now we easily calculated the percentage of "successful", "failed" or "canceled" projects by dividing the corresponding number by the total for each range of funding goal amounts. Values need to be round up by four decimal points, so the ROUND() function was applied to the division result. We also had to use percentage formatting for each of the newly calculated percentage columns.
+**4.** Now we easily calculated the percentage of "successful", "failed" or "canceled" projects by dividing the corresponding number by the total for each range of funding goal amounts. Values need to be round up by four decimal points, so the ROUND() function was applied to the division result. We also had to use percentage formatting for each of the newly calculated percentage columns.
 
 ![Percentage_formula_s](Images_Goals/Percentage_formula_s.png)
 
-5. Created a line chart titled "Outcomes Based on Goal" using line chart option from insert menu to visualize the relationship between the funding goal-amount ranges on the x-axis and the percentage of "successful", "failed", or "canceled" projects on the y-axis.
+**5.** Created a line chart titled "Outcomes Based on Goal" using line chart option from insert menu to visualize the relationship between the funding goal-amount ranges on the x-axis and the percentage of "successful", "failed", or "canceled" projects on the y-axis.
 
 ![Graph_Goal_s](Images_Goals/Graph_Goal_s.png)
 
