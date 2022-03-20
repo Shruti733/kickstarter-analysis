@@ -64,15 +64,15 @@ Following steps were followed for the analysis of outcomes based on goals:
 
 ![Goal_range_s](Images_Goals/Goal_range_s.png)
 
-**2.** Now COUNTIFS() functions were used to populate "Number Successful", "Number Failed", and "Number Canceled" columns for "Plays" subcategory. The COUNTIFS function was applied in the following manner:
-    - **criteria_range_1:** outcome column (F) range of Kickstarter spreadsheet was selected as criteria range_1 and,
-    - **criteria_1:** the outcome was compared against "successful" to get the number of successful campaigns.
+**2.** Now COUNTIFS() functions were used to populate "Number Successful", "Number Failed", and "Number Canceled" columns for "Plays" subcategory. 
+The COUNTIFS function was applied in the following manner:/
 
-    - **criteria_range_2:** goal column (D) of Kickstarter spreadsheet was selected and,
-    - **criteria_2:** the goal amount was compared against the range of Funding goal amount according to column A of "Outcomes based on Goals" spreadsheet.
-
-    - **criteria_range_3:** subcategory column (R) of Kickstarter spreadsheet was selected and,
-    - **criteria_3:** the subcategory was compared against "Plays" to filter the outcomes based on "Plays".
+- criteria_range_1: outcome column (F) range of Kickstarter spreadsheet was selected as criteria range_1 and,
+- criteria_1: the outcome was compared against "successful" to get the number of successful campaigns.
+- criteria_range_2: goal column (D) of Kickstarter spreadsheet was selected and,
+- criteria_2: the goal amount was compared against the range of Funding goal amount according to column A of "Outcomes based on Goals" spreadsheet.
+- criteria_range_3: subcategory column (R) of Kickstarter spreadsheet was selected and,
+- criteria_3: the subcategory was compared against "Plays" to filter the outcomes based on "Plays".
 
 ![Countif_formula_count_number_s](Images_Goals/Countif_formula_count_number_s.png)    
 
