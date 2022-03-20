@@ -62,7 +62,7 @@ Following steps were followed for the analysis of outcomes based on goals:
 
 1. Firstly, the funding goal-amount ranges were created to group the projects based on their targeted goal amounts.
 
-![Goal_range_s]((Images_Goals/Goal_range_s.png)
+![Goal_range_s](Images_Goals/Goal_range_s.png)
 
 2. Now COUNTIFS() functions were used to populate "Number Successful", "Number Failed", and "Number Canceled" columns for "Plays" subcategory. The COUNTIFS function was applied in the following manner:
     - **criteria_range_1:** outcome column (F) range of Kickstarter spreadsheet was selected as criteria range_1 and,
@@ -98,7 +98,7 @@ Technically, I could have edited and applied the function on each cell as per th
 repetitive and tedious to say the least. To avoid this repetition, I specified the range criteria in adjacent cells
 for all rows, that could be referenced in the COUNTIFS() function.
 
-![Goal_range_s](Images_Goals/Goal_range_s.png)
+![Range_s.png](Images_Goals/Range_s.png)
 
 Above image describes the mechanism I used to specify range in adjacent cells so that I could reference the same in
 my COUNTIFS() function. This allowed me to just copy and paste the function (CTRL + D) in all rows corresponding to
