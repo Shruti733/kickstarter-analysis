@@ -137,7 +137,7 @@ Above image explains how the above created range was referenced in the function 
     of the overall campaign data under the theater parent-category. So essentially, the trends only reflect the
     trends for year 2014-2017.
 
-- What can you conclude about the Outcomes based on Goals?/
+- What can you conclude about the Outcomes based on Goals?
 
     It is evident from the line chart that as the funding goal amount increased for a campaign, the success rate for
     the campaigns has gradually dipped whereas the failure rate has gradually increased. This provides us an indication
@@ -150,7 +150,7 @@ Above image explains how the above created range was referenced in the function 
     we just compare the goal amount values without considering their currencies, the trends can be biased.
     Ideally, we should be comparing apples with apples and this seems to be a comparison between apples and oranges! 
 
-- What are some limitations of this dataset?/
+- What are some limitations of this dataset?
 
     With reference to "Theater outcomes by launch date", we observed that there is lack of data to analyze the trends
     between 2009 to 2017 for "theater" parent-category. Bulk of the data is ranging between the year 2014 to 2017,
